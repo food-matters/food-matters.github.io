@@ -1,0 +1,29 @@
+ol li::before {
+  content: initial;
+}
+
+ol > li::before {
+    content: counters(item, ".") ". ";
+    counter-increment: item
+}
+
+ol, ul {
+    margin-top: calc(var(--global-space) * 1);
+    margin-bottom: calc(var(--global-space) * 1);
+}
+
+
+#portions {
+    border: 0 !important;
+    outline: none;
+    width: 5em !important;
+}
+
+.logo {
+    position: relative;
+    white-space: nowrap
+}
+
+a {
+    color: black;
+}
